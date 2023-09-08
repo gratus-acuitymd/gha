@@ -3,7 +3,7 @@ name: Workflow2
 on:
   workflow_run:
     workflows:
-      - Workflow
+      - "Workflow 1"
     types:
       - completed
 jobs:

@@ -1,5 +1,5 @@
 # Testing linked worklfows...this should not make itself to main
-name: Workflow
+name: Workflow 1
 on:
   push:
     branches:
