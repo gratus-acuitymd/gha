@@ -1,0 +1,11 @@
+# Testing linked worklfows...this should not make itself to main
+name: Workflow
+on:
+  push:
+    branches:
+      - "main"
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo \"Hello, World? \U0001F937\""

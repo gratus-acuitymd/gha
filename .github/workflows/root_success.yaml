@@ -1,0 +1,13 @@
+# Testing linked worklfows...this should not make itself to main
+name: Workflow2
+on:
+  workflow_run:
+    workflows:
+      - Workflow
+    types:
+      - completed
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo \"The previous step was successful. \U0001F937\""
